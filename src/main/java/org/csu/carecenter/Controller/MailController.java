@@ -45,7 +45,7 @@ public class MailController {
         String to  = request.getParameter("to");
         String subject = request.getParameter("subject");
         mailService.sendMail(to,subject,content);
-        return "mail/mailDemo";
+        return "redirect:/mail/mailForm";
     }
 
     @RequestMapping("/getMail")

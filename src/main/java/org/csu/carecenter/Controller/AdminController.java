@@ -39,7 +39,7 @@ public class AdminController {
 
     //跳转到管理员登陆界面
     @GetMapping("/adminLoginForm")
-    public String signonForm(Model model){
+    public String signonForm(){
         return "manager/login";
     }
 

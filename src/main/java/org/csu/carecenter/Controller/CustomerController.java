@@ -30,22 +30,6 @@ public class CustomerController {
     @Autowired
     private BedService bedService;
 
-    //时间线
-//    @GetMapping("/getDay")
-//    public String getDay(HttpServletRequest req,HttpSession session,Model model){
-//        int id = Integer.parseInt(req.getParameter("id"));
-//        List<Date> dayList = customerService.getDayList();
-//        List<TimeLine> timeLineList = customerService.getAllTimeLine();
-////        for (Date day:dayList
-////             ) {
-////
-////        }
-//        model.addAttribute("dayList", dayList);
-//        model.addAttribute("id", id);
-//        session.setAttribute("id", id);
-//        return "redirect:/customer/getTimeLineById";
-//    }
-
     @GetMapping("/getTimeLineById")
     public String getTimeLineById(HttpServletRequest req,HttpSession session,Model model){
         int id = Integer.parseInt(req.getParameter("id"));
